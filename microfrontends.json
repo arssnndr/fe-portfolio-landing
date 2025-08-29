@@ -1,0 +1,26 @@
+{
+    "applications": [
+        {
+            "fe-employee-management": {
+                "routing": [
+                    {
+                        "paths": [
+                            "/employee-management"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fe-portfolio-landing": {
+                "routing": [
+                    {
+                        "paths": [
+                            "/"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
