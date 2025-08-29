@@ -3,15 +3,8 @@
     "applications": {
         "fe-portfolio-landing": {
             "development": {
-                "fallback": "www.port-aris.my.id"
-            },
-            "routing": [
-                {
-                    "paths": [
-                        "/"
-                    ]
-                }
-            ]
+                "fallback": "https://www.port-aris.my.id"
+            }
         },
         "fe-employee-management": {
             "routing": [
