@@ -2,14 +2,13 @@
     "$schema": "https://openapi.vercel.sh/microfrontends.json",
     "applications": {
         "fe-portfolio-landing": {
+            "packageName": "fe-portfolio-landing",
             "development": {
                 "fallback": "https://www.port-aris.my.id"
             }
         },
         "fe-employee-management": {
-            "development": {
-                "fallback": "https://employee-management-one-snowy.vercel.app"
-            },
+            "packageName": "fe-employee-management",
             "routing": [
                 {
                     "paths": [
