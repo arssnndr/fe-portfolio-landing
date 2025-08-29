@@ -7,9 +7,13 @@
             }
         },
         "fe-employee-management": {
+            "development": {
+                "fallback": "https://employee-management-one-snowy.vercel.app"
+            },
             "routing": [
                 {
                     "paths": [
+                        "/employee-management",
                         "/employee-management/login",
                         "/employee-management/register",
                         "/employee-management/employees"
