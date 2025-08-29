@@ -1,26 +1,28 @@
 {
-    "applications": [
-        {
-            "fe-employee-management": {
-                "routing": [
-                    {
-                        "paths": [
-                            "/employee-management"
-                        ]
-                    }
-                ]
-            }
+    "$schema": "https://openapi.vercel.sh/microfrontends.json",
+    "applications": {
+        "fe-portfolio-landing": {
+            "development": {
+                "fallback": "www.port-aris.my.id"
+            },
+            "routing": [
+                {
+                    "paths": [
+                        "/"
+                    ]
+                }
+            ]
         },
-        {
-            "fe-portfolio-landing": {
-                "routing": [
-                    {
-                        "paths": [
-                            "/"
-                        ]
-                    }
-                ]
-            }
+        "fe-employee-management": {
+            "routing": [
+                {
+                    "paths": [
+                        "/employee-management/login",
+                        "/employee-management/register",
+                        "/employee-management/employees"
+                    ]
+                }
+            ]
         }
-    ]
+    }
 }
