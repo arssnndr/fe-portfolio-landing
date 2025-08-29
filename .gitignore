@@ -29,3 +29,18 @@ package-lock.json
 *.sw?
 
 *.tsbuildinfo
+
+# Environment files - ignore local secrets, but keep example files in repo
+.env
+.env.*.local
+
+# Vite / build cache
+.vite
+.cache
+node_modules/.vite
+
+# Optional: OS or editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+

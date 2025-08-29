@@ -6,6 +6,7 @@ import App from '../App.vue'
 describe('App', () => {
   it('mounts renders properly', () => {
     const wrapper = mount(App)
-    expect(wrapper.text()).toContain('You did it!')
+    // updated to match new landing content
+    expect(wrapper.text()).toContain('Your Name')
   })
 })

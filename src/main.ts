@@ -9,4 +9,7 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 
+// global styles for the portfolio
+import './styles/global.css'
+
 app.mount('#app')
