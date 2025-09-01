@@ -5,13 +5,19 @@
   --primary-purple: #8b5cf6;
   --secondary-cyan: #06b6d4;
   --secondary-teal: #10b981;
+  --accent-primary: #3b82f6;
 
-  /* Gradients */
+  /* Gradients - Unified dark theme */
   --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
-  --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-  --gradient-about: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
-  --gradient-projects: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
-  --gradient-contact: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-unified: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  --gradient-hero: var(--gradient-unified);
+  --gradient-about: var(--gradient-unified);
+  --gradient-projects: var(--gradient-unified);
+  --gradient-contact: var(--gradient-unified);
+
+  /* Background */
+  --background-primary: var(--gradient-unified);
+  --background-secondary: #1e293b;
 
   /* Glass morphism */
   --glass-bg: rgba(255, 255, 255, 0.1);
@@ -30,6 +36,7 @@
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
+  --spacing-section: 5rem;
 
   /* Border radius */
   --radius-sm: 0.5rem;
@@ -44,6 +51,7 @@
   --transition-slow: 0.5s ease;
 
   /* Typography */
+  --font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;

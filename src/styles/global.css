@@ -1,6 +1,6 @@
 :root {
-  --bg: #ffffff;
-  --muted: #6b7280;
+  --bg: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  --muted: #cbd5e1;
 }
 
 * {
@@ -25,7 +25,8 @@ body {
     Arial;
   margin: 0;
   background: var(--bg);
-  color: #0f172a;
+  color: #ffffff;
+  min-height: 100vh;
 }
 
 a {
