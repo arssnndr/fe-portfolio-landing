@@ -10,7 +10,7 @@
         "fe-employee-management": {
             "packageName": "fe-employee-management",
             "development": {
-                "fallback": "https://fe-employee-management.vercel.app"
+                "fallback": "https://employee-management-one-snowy.vercel.app"
             },
             "routing": [
                 {
