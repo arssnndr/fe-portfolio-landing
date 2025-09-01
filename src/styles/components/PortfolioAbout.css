@@ -1,7 +1,8 @@
 /* PortfolioAbout Component Styles */
 .about-section {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  color: white;
   position: relative;
   overflow: hidden;
 }
@@ -14,9 +15,9 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -37,8 +38,11 @@
 .about-section .section-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #1e293b;
   margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   position: relative;
 }
 
@@ -59,12 +63,12 @@
 }
 
 .about-section .bio-card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(30, 41, 59, 0.8);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(71, 85, 105, 0.3);
   border-radius: 25px;
   padding: 2.5rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   animation: fadeInLeft 0.8s ease-out;
 }
 
@@ -90,14 +94,14 @@
 .about-section .card-header h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #e2e8f0;
   margin: 0;
 }
 
 .about-section .bio-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #475569;
+  color: #cbd5e1;
   margin: 0;
 }
 
@@ -110,12 +114,12 @@
 
 .about-section .skills-card,
 .about-section .stats-card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(30, 41, 59, 0.8);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(71, 85, 105, 0.3);
   border-radius: 25px;
   padding: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -128,7 +132,7 @@
 .about-section .stats-card h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #e2e8f0;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -144,13 +148,13 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(51, 65, 85, 0.6);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
 
 .about-section .skill-item:hover {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(71, 85, 105, 0.8);
   transform: translateY(-2px);
 }
 
@@ -187,13 +191,13 @@
 .about-section .skill-info h4 {
   font-size: 1rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #e2e8f0;
   margin-bottom: 0.25rem;
 }
 
 .about-section .skill-info p {
   font-size: 0.875rem;
-  color: #64748b;
+  color: #cbd5e1;
   margin: 0;
 }
 
@@ -228,7 +232,7 @@
 
 .about-section .stat-label {
   font-size: 0.875rem;
-  color: #64748b;
+  color: #cbd5e1;
   font-weight: 500;
 }
 
