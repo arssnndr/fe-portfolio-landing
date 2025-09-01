@@ -2,7 +2,8 @@ interface Project {
   id: number
   title: string
   desc: string
-  link?: string
+  demoUrl?: string
+  githubUrl?: string
 }
 
 export interface PersonalConfig {
@@ -30,19 +31,21 @@ export const personal: PersonalConfig = {
       id: 1,
       title: 'Portfolio Landing Page',
       desc: 'Modern portfolio website built with Vue 3, TypeScript, and Vite. Features microfrontend architecture, responsive design, and optimized performance.',
-      link: 'https://www.port-aris.my.id',
+      demoUrl: 'https://www.port-aris.my.id',
+      githubUrl: 'https://github.com/arssnndr/fe-portfolio-landing',
     },
     {
       id: 2,
-      title: 'Employee Management',
+      title: 'Employee Management System',
       desc: 'Comprehensive employee management application with authentication, CRUD operations, search and filtering capabilities, and responsive UI. Features form validation and secure workflow for HR management.',
-      link: 'https://www.port-aris.my.id/employee-management/login',
+      demoUrl: 'https://www.port-aris.my.id/employee-management/login',
+      githubUrl: 'https://github.com/arssnndr/fe-employee-management',
     },
     {
       id: 3,
       title: 'Employee Management API',
-      desc: 'Express.js REST API backend for employee management. Features JWT authentication, Supabase integration, comprehensive testing with Node.js test runner, rate limiting, and security middleware. Includes user registration/login and full CRUD operations for employee data.',
-      link: 'https://github.com/arssnndr/be-employee-management',
+      desc: 'Express.js REST API backend for employee management system. Features JWT authentication, Supabase integration, comprehensive testing with Node.js test runner, rate limiting, and security middleware. Includes user registration/login and full CRUD operations for employee data.',
+      githubUrl: 'https://github.com/arssnndr/be-employee-management',
     },
   ],
   socials: {
