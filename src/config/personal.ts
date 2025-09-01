@@ -30,7 +30,7 @@ export const personal: PersonalConfig = {
       id: 1,
       title: 'Employee Management',
       desc: 'Aplikasi manajemen karyawan dengan autentikasi, CRUD data, pencarian dan filter, serta antarmuka responsif. Menyediakan validasi form untuk alur kerja HR yang aman.',
-      link: 'https://www.port-aris.my.id/employee-management'
+      link: 'https://www.port-aris.my.id/employee-management/login'
     },
     {
       id: 2,
