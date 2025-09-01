@@ -9,13 +9,14 @@
         },
         "fe-employee-management": {
             "packageName": "fe-employee-management",
+            "development": {
+                "fallback": "https://fe-employee-management.vercel.app"
+            },
             "routing": [
                 {
                     "paths": [
                         "/employee-management",
-                        "/employee-management/login",
-                        "/employee-management/register",
-                        "/employee-management/employees"
+                        "/employee-management/**"
                     ]
                 }
             ]
