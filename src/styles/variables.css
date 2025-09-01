@@ -1,0 +1,74 @@
+/* CSS Variables for consistent theming */
+:root {
+  /* Colors */
+  --primary-blue: #3b82f6;
+  --primary-purple: #8b5cf6;
+  --secondary-cyan: #06b6d4;
+  --secondary-teal: #10b981;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+  --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  --gradient-about: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+  --gradient-projects: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  --gradient-contact: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* Glass morphism */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-backdrop: blur(15px);
+
+  /* Shadows */
+  --shadow-sm: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 15px 35px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.2);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Border radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 50px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Typography */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+
+  /* Container */
+  --container-max-width: 1200px;
+  --container-padding: 2rem;
+}
+
+/* Dark theme variables */
+[data-theme='dark'] {
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-muted: rgba(255, 255, 255, 0.6);
+}
+
+/* Light theme variables */
+[data-theme='light'] {
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+}

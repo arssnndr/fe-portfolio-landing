@@ -5,6 +5,7 @@ A modern, responsive portfolio website built with Vue 3, TypeScript, and Vite. F
 ## ✨ Features
 
 - **Modern Tech Stack**: Vue 3 with Composition API, TypeScript, and Vite
+- **Modular CSS Architecture**: Separated component styles with organized structure
 - **Responsive Design**: Mobile-first approach with clean, professional styling
 - **Centralized Configuration**: Easy-to-update personal information in one place
 - **Microfrontends Architecture**: Seamless integration with other applications
@@ -26,6 +27,15 @@ src/
 ├── pages/
 │   ├── LandingPage.vue        # Main portfolio page
 │   └── NotFound.vue           # 404 error page
+├── styles/
+│   ├── main.css               # Main stylesheet entry point
+│   ├── variables.css          # CSS custom properties
+│   ├── animations.css         # Reusable animations
+│   └── components/
+│       ├── PortfolioHero.css      # Hero component styles
+│       ├── PortfolioAbout.css     # About component styles
+│       ├── PortfolioProjects.css  # Projects component styles
+│       └── PortfolioContact.css   # Contact component styles
 ├── config/
 │   └── personal.ts            # Centralized personal data
 └── router/
@@ -178,12 +188,35 @@ npm run build        # Build for production
 - **Coverage**: User workflows and navigation
 - **Location**: `cypress/e2e/`
 
-## 🎨 Styling
+## 🎨 Styling Architecture
 
-- **Approach**: Vanilla CSS with CSS custom properties
-- **Methodology**: Component-scoped styles with global utilities
+- **Approach**: Modular CSS with separated component styles
+- **Structure**: Organized CSS files for better maintainability
+- **Methodology**: External CSS imports with CSS custom properties
 - **Responsive**: Mobile-first responsive design
-- **Theme**: CSS variables for consistent theming
+- **Theme**: CSS variables for consistent theming across components
+- **Animations**: Reusable keyframes and utility classes
+
+### CSS Organization
+
+```
+src/styles/
+├── main.css              # Main entry point importing all styles
+├── variables.css         # CSS custom properties (colors, spacing, etc.)
+├── animations.css        # Reusable animations and keyframes
+└── components/
+    ├── PortfolioHero.css     # Hero section styles
+    ├── PortfolioAbout.css    # About section styles
+    ├── PortfolioProjects.css # Projects section styles
+    └── PortfolioContact.css  # Contact section styles
+```
+
+**Benefits of this architecture:**
+
+- **Maintainability**: Easy to find and update component-specific styles
+- **Reusability**: Shared variables and animations across components
+- **Organization**: Clean separation between component logic and styling
+- **Performance**: Better CSS bundle optimization possibilities
 
 ## 📁 Project Structure
 
@@ -200,7 +233,11 @@ fe-portfolio-landing/
 │   ├── pages/           # Page components
 │   ├── router/          # Router configuration
 │   ├── stores/          # Pinia stores
-│   ├── styles/          # Global styles
+│   ├── styles/          # Modular CSS architecture
+│   │   ├── main.css           # Main stylesheet entry
+│   │   ├── variables.css      # CSS custom properties
+│   │   ├── animations.css     # Reusable animations
+│   │   └── components/        # Component-specific styles
 │   ├── App.vue          # Root component
 │   └── main.ts          # Application entry
 ├── microfrontends.json   # Microfrontends config

@@ -1,0 +1,12 @@
+/* Component Styles Index */
+/* Import all component styles here for better organization */
+
+/* Core animations and utilities */
+@import './animations.css';
+@import './variables.css';
+
+/* Component styles */
+@import './components/PortfolioHero.css';
+@import './components/PortfolioAbout.css';
+@import './components/PortfolioProjects.css';
+@import './components/PortfolioContact.css';
