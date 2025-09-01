@@ -28,15 +28,21 @@ export const personal: PersonalConfig = {
   projects: [
     {
       id: 1,
-      title: 'Employee Management System',
+      title: 'Portfolio Landing Page',
+      desc: 'Modern portfolio website built with Vue 3, TypeScript, and Vite. Features microfrontend architecture, responsive design, and optimized performance.',
+      link: 'https://www.port-aris.my.id',
+    },
+    {
+      id: 2,
+      title: 'Employee Management',
       desc: 'Comprehensive employee management application with authentication, CRUD operations, search and filtering capabilities, and responsive UI. Features form validation and secure workflow for HR management.',
       link: 'https://www.port-aris.my.id/employee-management/login',
     },
     {
-      id: 2,
-      title: 'Portfolio Landing Page',
-      desc: 'Modern portfolio website built with Vue 3, TypeScript, and Vite. Features microfrontend architecture, responsive design, and optimized performance.',
-      link: 'https://www.port-aris.my.id',
+      id: 3,
+      title: 'Employee Management API',
+      desc: 'Express.js REST API backend for employee management. Features JWT authentication, Supabase integration, comprehensive testing with Node.js test runner, rate limiting, and security middleware. Includes user registration/login and full CRUD operations for employee data.',
+      link: 'https://github.com/arssnndr/be-employee-management',
     },
   ],
   socials: {
