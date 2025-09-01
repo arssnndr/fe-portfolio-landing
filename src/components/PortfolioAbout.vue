@@ -13,10 +13,10 @@ const { bio } = personal
 
 <style scoped>
 .section {
-  padding: 2rem 0
+  padding: 2rem 0;
 }
 
 h2 {
-  margin-bottom: .5rem
+  margin-bottom: 0.5rem;
 }
 </style>

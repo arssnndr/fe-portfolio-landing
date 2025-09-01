@@ -10,8 +10,14 @@ const { projects } = personal
       <article v-for="p in projects" :key="p.id" class="card">
         <h3>{{ p.title }}</h3>
         <p>{{ p.desc }}</p>
-        <a class="link" :href="p.link" target="_blank" rel="noopener noreferrer"
-          :aria-label="`View ${p.title} (opens in a new tab)`">View</a>
+        <a
+          class="link"
+          :href="p.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          :aria-label="`View ${p.title} (opens in a new tab)`"
+          >View</a
+        >
       </article>
     </div>
   </section>
@@ -21,18 +27,18 @@ const { projects } = personal
 .grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .card {
   padding: 1rem;
-  border-radius: .5rem;
-  background: #f8fafc
+  border-radius: 0.5rem;
+  background: #f8fafc;
 }
 
 .link {
   color: #075985;
   text-decoration: none;
-  font-weight: 600
+  font-weight: 600;
 }
 </style>

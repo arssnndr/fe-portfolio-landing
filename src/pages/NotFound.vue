@@ -15,6 +15,16 @@ function goHome() {
 </template>
 
 <style scoped>
-.not-found { text-align: center; padding: 4rem 1rem }
-.btn { background: #06b6d4; color: #042024; padding: .6rem 1rem; border-radius: .5rem; border: none; cursor: pointer }
+.not-found {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.btn {
+  background: #06b6d4;
+  color: #042024;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
 </style>

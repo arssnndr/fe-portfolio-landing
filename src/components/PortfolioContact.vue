@@ -7,10 +7,15 @@ const { email, socials } = personal
 <template>
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>If you'd like to work together, send an email to <a :href="`mailto:${email}`">{{ email }}</a>.</p>
+    <p>
+      If you'd like to work together, send an email to <a :href="`mailto:${email}`">{{ email }}</a
+      >.
+    </p>
     <div v-if="socials" class="social-links">
       <a v-if="socials.github" :href="socials.github" target="_blank" rel="noopener">GitHub</a>
-      <a v-if="socials.linkedin" :href="socials.linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      <a v-if="socials.linkedin" :href="socials.linkedin" target="_blank" rel="noopener"
+        >LinkedIn</a
+      >
       <a v-if="socials.twitter" :href="socials.twitter" target="_blank" rel="noopener">Twitter</a>
     </div>
   </section>
@@ -18,11 +23,11 @@ const { email, socials } = personal
 
 <style scoped>
 .section {
-  padding: 2rem 0
+  padding: 2rem 0;
 }
 
 a {
-  color: #0ea5a4
+  color: #0ea5a4;
 }
 
 .social-links {

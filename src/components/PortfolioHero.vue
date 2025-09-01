@@ -28,35 +28,35 @@ const { name, role, tagline } = personal
 
 .hero-inner h1 {
   font-size: 2.25rem;
-  margin: 0 0 .5rem
+  margin: 0 0 0.5rem;
 }
 
 .lead {
-  opacity: .9
+  opacity: 0.9;
 }
 
 .hero-cta {
-  margin-top: 1.25rem
+  margin-top: 1.25rem;
 }
 
 .btn {
   background: #06b6d4;
   color: #042024;
-  padding: .6rem 1rem;
-  border-radius: .5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
   text-decoration: none;
-  margin: 0 .25rem
+  margin: 0 0.25rem;
 }
 
 .btn-outline {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, .15);
-  color: white
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .hero-inner h1 {
-    font-size: 3rem
+    font-size: 3rem;
   }
 }
 </style>

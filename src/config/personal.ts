@@ -30,17 +30,17 @@ export const personal: PersonalConfig = {
       id: 1,
       title: 'Employee Management System',
       desc: 'Comprehensive employee management application with authentication, CRUD operations, search and filtering capabilities, and responsive UI. Features form validation and secure workflow for HR management.',
-      link: 'https://www.port-aris.my.id/employee-management/login'
+      link: 'https://www.port-aris.my.id/employee-management/login',
     },
     {
       id: 2,
       title: 'Portfolio Landing Page',
       desc: 'Modern portfolio website built with Vue 3, TypeScript, and Vite. Features microfrontend architecture, responsive design, and optimized performance.',
-      link: 'https://www.port-aris.my.id'
-    }
+      link: 'https://www.port-aris.my.id',
+    },
   ],
   socials: {
     github: 'https://github.com/arssnndr',
-    linkedin: 'https://www.linkedin.com/in/arssnndr/'
-  }
+    linkedin: 'https://www.linkedin.com/in/arssnndr/',
+  },
 }
