@@ -282,6 +282,12 @@
   border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
+.projects-section .tech-tag.tailwind {
+  background: rgba(6, 182, 212, 0.2);
+  color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
 .projects-section .tech-tag.default {
   background: rgba(156, 163, 175, 0.2);
   color: #9ca3af;

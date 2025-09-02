@@ -50,7 +50,7 @@ export const personal: PersonalConfig = {
       desc: 'Comprehensive employee management application with authentication, CRUD operations, search and filtering capabilities, and responsive UI. Features form validation and secure workflow for HR management.',
       demoUrl: 'https://www.port-aris.my.id/employee-management/login',
       githubUrl: 'https://github.com/arssnndr/fe-employee-management',
-      tech: ['Angular', 'TypeScript', 'Bootstrap'],
+      tech: ['Angular', 'TypeScript', 'Tailwind CSS'],
     },
     {
       id: 3,
@@ -74,5 +74,6 @@ export const personal: PersonalConfig = {
     Vite: 'vite',
     Bootstrap: 'bootstrap',
     Supabase: 'supabase',
+    'Tailwind CSS': 'tailwind',
   },
 }
