@@ -15,6 +15,10 @@ const { name, role, tagline } = personal
           <p class="portfolio-hero__role">{{ role }}</p>
           <p class="portfolio-hero__tagline">{{ tagline }}</p>
           <div class="portfolio-hero__cta">
+            <a href="#about" class="portfolio-hero__cta-btn portfolio-hero__cta-btn--secondary">
+              <UserIcon />
+              About Me
+            </a>
             <a href="#projects" class="portfolio-hero__cta-btn portfolio-hero__cta-btn--primary">
               <ArrowUpRight />
               View Projects
