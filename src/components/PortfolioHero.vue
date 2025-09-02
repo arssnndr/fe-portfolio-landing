@@ -39,8 +39,13 @@ const { name, role, tagline } = personal
               </div>
               <div class="portfolio-hero__tech-badges">
                 <span class="portfolio-hero__tech-badge">Vue.js</span>
-                <span class="portfolio-hero__tech-badge">TypeScript</span>
                 <span class="portfolio-hero__tech-badge">Angular</span>
+                <span class="portfolio-hero__tech-badge">TypeScript</span>
+                <span class="portfolio-hero__tech-badge">Node.js</span>
+                <span class="portfolio-hero__tech-badge">Express.js</span>
+                <span class="portfolio-hero__tech-badge">Vite</span>
+                <span class="portfolio-hero__tech-badge">Tailwind CSS</span>
+                <span class="portfolio-hero__tech-badge">Supabase</span>
               </div>
             </div>
           </div>
