@@ -1,5 +1,5 @@
-/* PortfolioContact Component Styles */
-.contact-section {
+/* PortfolioContact Component Styles - BEM Methodology */
+.portfolio-contact {
   padding: 4rem 0;
   background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
   color: white;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.contact-section::before {
+.portfolio-contact::before {
   content: '';
   position: absolute;
   top: 0;
@@ -21,7 +21,7 @@
   pointer-events: none;
 }
 
-.contact-section .container {
+.portfolio-contact__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -29,13 +29,13 @@
   z-index: 1;
 }
 
-.contact-section .section-header {
+.portfolio-contact__header {
   text-align: center;
   margin-bottom: 3rem;
   animation: fadeInUp 0.8s ease-out;
 }
 
-.contact-section .section-title {
+.portfolio-contact__title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -45,7 +45,7 @@
   background-clip: text;
 }
 
-.contact-section .section-subtitle {
+.portfolio-contact__subtitle {
   font-size: 1.2rem;
   opacity: 0.9;
   max-width: 600px;
@@ -53,19 +53,19 @@
   line-height: 1.6;
 }
 
-.contact-section .contact-grid {
+.portfolio-contact__grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
 }
 
-.contact-section .contact-methods {
+.portfolio-contact__methods {
   display: grid;
   gap: 1.5rem;
 }
 
-.contact-section .contact-card {
+.portfolio-contact__card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -78,21 +78,21 @@
   animation: fadeInLeft 0.8s ease-out;
 }
 
-.contact-section .contact-card:nth-child(2) {
+.portfolio-contact__card:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-.contact-section .contact-card:nth-child(3) {
+.portfolio-contact__card:nth-child(3) {
   animation-delay: 0.4s;
 }
 
-.contact-section .contact-card:hover {
+.portfolio-contact__card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.contact-section .contact-icon {
+.portfolio-contact__icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -104,29 +104,33 @@
   transition: all 0.3s ease;
 }
 
-.contact-section .email-card:hover .contact-icon {
+.portfolio-contact__card--email:hover .portfolio-contact__icon {
   background: linear-gradient(135deg, #ff6b6b, #ee5a52);
   transform: scale(1.1);
 }
 
-.contact-section .phone-card:hover .contact-icon {
+.portfolio-contact__card--phone:hover .portfolio-contact__icon {
   background: linear-gradient(135deg, #4ecdc4, #44a08d);
   transform: scale(1.1);
 }
 
-.contact-section .whatsapp-card:hover .contact-icon {
+.portfolio-contact__card--whatsapp:hover .portfolio-contact__icon {
   background: linear-gradient(135deg, #25d366, #128c7e);
   transform: scale(1.1);
 }
 
-.contact-section .contact-info h3 {
+.portfolio-contact__info {
+  flex: 1;
+}
+
+.portfolio-contact__method-title {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: white;
 }
 
-.contact-section .contact-link {
+.portfolio-contact__link {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-size: 1.1rem;
@@ -134,29 +138,29 @@
   border-bottom: 1px solid transparent;
 }
 
-.contact-section .contact-link:hover {
+.portfolio-contact__link:hover {
   color: white;
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-.contact-section .social-section {
+.portfolio-contact__social-section {
   animation: fadeInRight 0.8s ease-out;
 }
 
-.contact-section .social-title {
+.portfolio-contact__social-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.contact-section .social-links {
+.portfolio-contact__social-links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.contact-section .social-link {
+.portfolio-contact__social-link {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -171,28 +175,28 @@
   font-weight: 500;
 }
 
-.contact-section .social-link:hover {
+.portfolio-contact__social-link:hover {
   transform: translateX(5px);
   background: rgba(255, 255, 255, 0.2);
 }
 
-.contact-section .social-link.github:hover {
+.portfolio-contact__social-link--github:hover {
   background: linear-gradient(135deg, #333, #24292e);
 }
 
-.contact-section .social-link.linkedin:hover {
+.portfolio-contact__social-link--linkedin:hover {
   background: linear-gradient(135deg, #0077b5, #005885);
 }
 
-.contact-section .social-link.whatsapp:hover {
+.portfolio-contact__social-link--whatsapp:hover {
   background: linear-gradient(135deg, #25d366, #128c7e);
 }
 
-.contact-section .cta-section {
+.portfolio-contact__cta-section {
   animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
-.contact-section .cta-card {
+.portfolio-contact__cta-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -203,7 +207,7 @@
   overflow: hidden;
 }
 
-.contact-section .cta-card::before {
+.portfolio-contact__cta-card::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -216,17 +220,17 @@
   opacity: 0;
 }
 
-.contact-section .cta-card:hover::before {
+.portfolio-contact__cta-card:hover::before {
   animation: shimmer 1.5s ease-in-out;
 }
 
-.contact-section .cta-card h3 {
+.portfolio-contact__cta-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.contact-section .cta-card p {
+.portfolio-contact__cta-description {
   font-size: 1.1rem;
   opacity: 0.9;
   margin-bottom: 2rem;
@@ -235,14 +239,14 @@
   margin-right: auto;
 }
 
-.contact-section .cta-buttons {
+.portfolio-contact__cta-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.contact-section .cta-btn {
+.portfolio-contact__cta-btn {
   padding: 1rem 2rem;
   border-radius: 50px;
   text-decoration: none;
@@ -253,19 +257,19 @@
   z-index: 1;
 }
 
-.contact-section .cta-btn.primary {
+.portfolio-contact__cta-btn--primary {
   background: linear-gradient(135deg, #ff6b6b, #ee5a52);
   color: white;
   border: 2px solid transparent;
 }
 
-.contact-section .cta-btn.secondary {
+.portfolio-contact__cta-btn--secondary {
   background: transparent;
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.contact-section .cta-btn::before {
+.portfolio-contact__cta-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -277,22 +281,22 @@
   z-index: -1;
 }
 
-.contact-section .cta-btn:hover::before {
+.portfolio-contact__cta-btn:hover::before {
   left: 100%;
 }
 
-.contact-section .cta-btn.primary:hover {
+.portfolio-contact__cta-btn--primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
 }
 
-.contact-section .cta-btn.secondary:hover {
+.portfolio-contact__cta-btn--secondary:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
-/* Animations for Contact section */
+/* Animations for PortfolioContact component */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -345,59 +349,59 @@
   }
 }
 
-/* Responsive Design for Contact section */
+/* Responsive Design for PortfolioContact component */
 @media (max-width: 768px) {
-  .contact-section {
+  .portfolio-contact {
     padding: 3rem 0;
   }
 
-  .contact-section .container {
+  .portfolio-contact__container {
     padding: 0 1rem;
   }
 
-  .contact-section .section-title {
+  .portfolio-contact__title {
     font-size: 2.5rem;
   }
 
-  .contact-section .contact-grid {
+  .portfolio-contact__grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .contact-section .contact-card {
+  .portfolio-contact__card {
     padding: 1.5rem;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
 
-  .contact-section .contact-info h3 {
+  .portfolio-contact__method-title {
     margin-bottom: 0.25rem;
   }
 
-  .contact-section .social-links {
+  .portfolio-contact__social-links {
     gap: 0.75rem;
   }
 
-  .contact-section .social-link {
+  .portfolio-contact__social-link {
     padding: 0.875rem 1.25rem;
     justify-content: center;
   }
 
-  .contact-section .cta-card {
+  .portfolio-contact__cta-card {
     padding: 2rem 1.5rem;
   }
 
-  .contact-section .cta-card h3 {
+  .portfolio-contact__cta-title {
     font-size: 1.75rem;
   }
 
-  .contact-section .cta-buttons {
+  .portfolio-contact__cta-buttons {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-section .cta-btn {
+  .portfolio-contact__cta-btn {
     width: 100%;
     max-width: 300px;
     text-align: center;
@@ -405,20 +409,20 @@
 }
 
 @media (max-width: 480px) {
-  .contact-section .section-title {
+  .portfolio-contact__title {
     font-size: 2rem;
   }
 
-  .contact-section .contact-card {
+  .portfolio-contact__card {
     padding: 1.25rem;
   }
 
-  .contact-section .contact-icon {
+  .portfolio-contact__icon {
     width: 50px;
     height: 50px;
   }
 
-  .contact-section .cta-card {
+  .portfolio-contact__cta-card {
     padding: 1.5rem 1rem;
   }
 }

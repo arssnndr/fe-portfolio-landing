@@ -1,5 +1,5 @@
-/* PortfolioAbout Component Styles */
-.about-section {
+/* PortfolioAbout Component Styles - BEM Methodology */
+.portfolio-about {
   padding: 5rem 0;
   background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
   color: white;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.about-section::before {
+.portfolio-about::before {
   content: '';
   position: absolute;
   top: 0;
@@ -21,7 +21,7 @@
   pointer-events: none;
 }
 
-.about-section .container {
+.portfolio-about__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -29,13 +29,13 @@
   z-index: 1;
 }
 
-.about-section .section-header {
+.portfolio-about__header {
   text-align: center;
   margin-bottom: 4rem;
   animation: fadeInUp 0.8s ease-out;
 }
 
-.about-section .section-title {
+.portfolio-about__title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -46,7 +46,7 @@
   position: relative;
 }
 
-.about-section .title-decoration {
+.portfolio-about__title-decoration {
   width: 100px;
   height: 4px;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -55,31 +55,34 @@
   animation: expandWidth 1s ease-out 0.5s both;
 }
 
-.about-section .about-content {
+.portfolio-about__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
 }
 
-.about-section .bio-card {
+.portfolio-about__bio-section {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.portfolio-about__bio-card {
   background: rgba(30, 41, 59, 0.8);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(71, 85, 105, 0.3);
   border-radius: 25px;
   padding: 2.5rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  animation: fadeInLeft 0.8s ease-out;
 }
 
-.about-section .card-header {
+.portfolio-about__bio-header {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.about-section .profile-icon {
+.portfolio-about__profile-icon {
   width: 60px;
   height: 60px;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -91,29 +94,29 @@
   flex-shrink: 0;
 }
 
-.about-section .card-header h3 {
+.portfolio-about__bio-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #e2e8f0;
   margin: 0;
 }
 
-.about-section .bio-text {
+.portfolio-about__bio-text {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #cbd5e1;
   margin: 0;
 }
 
-.about-section .skills-showcase {
+.portfolio-about__skills-section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   animation: fadeInRight 0.8s ease-out;
 }
 
-.about-section .skills-card,
-.about-section .stats-card {
+.portfolio-about__skills-card,
+.portfolio-about__stats-card {
   background: rgba(30, 41, 59, 0.8);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(71, 85, 105, 0.3);
@@ -123,13 +126,13 @@
   transition: transform 0.3s ease;
 }
 
-.about-section .skills-card:hover,
-.about-section .stats-card:hover {
+.portfolio-about__skills-card:hover,
+.portfolio-about__stats-card:hover {
   transform: translateY(-5px);
 }
 
-.about-section .skills-card h3,
-.about-section .stats-card h3 {
+.portfolio-about__skills-title,
+.portfolio-about__stats-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #e2e8f0;
@@ -137,13 +140,13 @@
   text-align: center;
 }
 
-.about-section .skills-grid {
+.portfolio-about__skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
-.about-section .skill-item {
+.portfolio-about__skill-item {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -153,12 +156,12 @@
   transition: all 0.3s ease;
 }
 
-.about-section .skill-item:hover {
+.portfolio-about__skill-item:hover {
   background: rgba(71, 85, 105, 0.8);
   transform: translateY(-2px);
 }
 
-.about-section .skill-icon {
+.portfolio-about__skill-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -168,46 +171,50 @@
   flex-shrink: 0;
 }
 
-.about-section .skill-item.frontend .skill-icon {
+.portfolio-about__skill-item--frontend .portfolio-about__skill-icon {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: white;
 }
 
-.about-section .skill-item.tools .skill-icon {
+.portfolio-about__skill-item--tools .portfolio-about__skill-icon {
   background: linear-gradient(135deg, #10b981, #059669);
   color: white;
 }
 
-.about-section .skill-item.design .skill-icon {
+.portfolio-about__skill-item--design .portfolio-about__skill-icon {
   background: linear-gradient(135deg, #f59e0b, #d97706);
   color: white;
 }
 
-.about-section .skill-item.backend .skill-icon {
+.portfolio-about__skill-item--backend .portfolio-about__skill-icon {
   background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   color: white;
 }
 
-.about-section .skill-info h4 {
+.portfolio-about__skill-info {
+  flex: 1;
+}
+
+.portfolio-about__skill-name {
   font-size: 1rem;
   font-weight: 600;
   color: #e2e8f0;
   margin-bottom: 0.25rem;
 }
 
-.about-section .skill-info p {
+.portfolio-about__skill-description {
   font-size: 0.875rem;
   color: #cbd5e1;
   margin: 0;
 }
 
-.about-section .stats-grid {
+.portfolio-about__stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.about-section .stat-item {
+.portfolio-about__stat-item {
   text-align: center;
   padding: 1.5rem 1rem;
   background: rgba(255, 255, 255, 0.5);
@@ -215,16 +222,16 @@
   transition: all 0.3s ease;
 }
 
-.about-section .stat-item:hover {
+.portfolio-about__stat-item:hover {
   background: rgba(255, 255, 255, 0.8);
   transform: translateY(-2px);
 }
 
-.about-section .stat-item:hover .stat-label {
+.portfolio-about__stat-item:hover .portfolio-about__stat-label {
   color: #1e293b;
 }
 
-.about-section .stat-number {
+.portfolio-about__stat-number {
   font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -234,14 +241,14 @@
   margin-bottom: 0.5rem;
 }
 
-.about-section .stat-label {
+.portfolio-about__stat-label {
   font-size: 0.875rem;
   color: #cbd5e1;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-/* Animations for About section */
+/* Animations for PortfolioAbout component */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -288,70 +295,70 @@
   }
 }
 
-/* Responsive Design for About section */
+/* Responsive Design for PortfolioAbout component */
 @media (max-width: 768px) {
-  .about-section {
+  .portfolio-about {
     padding: 3rem 0;
   }
 
-  .about-section .container {
+  .portfolio-about__container {
     padding: 0 1rem;
   }
 
-  .about-section .section-title {
+  .portfolio-about__title {
     font-size: 2.5rem;
   }
 
-  .about-section .about-content {
+  .portfolio-about__content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .about-section .bio-card,
-  .about-section .skills-card,
-  .about-section .stats-card {
+  .portfolio-about__bio-card,
+  .portfolio-about__skills-card,
+  .portfolio-about__stats-card {
     padding: 2rem 1.5rem;
   }
 
-  .about-section .card-header {
+  .portfolio-about__bio-header {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
 
-  .about-section .skills-grid {
+  .portfolio-about__skills-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-section .stats-grid {
+  .portfolio-about__stats-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .about-section .section-title {
+  .portfolio-about__title {
     font-size: 2rem;
   }
 
-  .about-section .bio-card,
-  .about-section .skills-card,
-  .about-section .stats-card {
+  .portfolio-about__bio-card,
+  .portfolio-about__skills-card,
+  .portfolio-about__stats-card {
     padding: 1.5rem 1rem;
   }
 
-  .about-section .profile-icon {
+  .portfolio-about__profile-icon {
     width: 50px;
     height: 50px;
   }
 
-  .about-section .skill-item {
+  .portfolio-about__skill-item {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
 
-  .about-section .skill-icon {
+  .portfolio-about__skill-icon {
     width: 40px;
     height: 40px;
   }

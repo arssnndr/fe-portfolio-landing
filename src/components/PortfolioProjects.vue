@@ -6,45 +6,45 @@ import '@/styles/components/PortfolioProjects.css'
 const { projects, techMapping } = personal
 </script>
 <template>
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">
+  <section id="projects" class="portfolio-projects">
+    <div class="portfolio-projects__container">
+      <div class="portfolio-projects__header">
+        <h2 class="portfolio-projects__title">Featured Projects</h2>
+        <p class="portfolio-projects__subtitle">
           A showcase of my recent work and contributions to the web development community
         </p>
-        <div class="title-decoration"></div>
+        <div class="portfolio-projects__title-decoration"></div>
       </div>
 
-      <div class="projects-grid">
+      <div class="portfolio-projects__grid">
         <article
           v-for="(p, index) in projects"
           :key="p.id"
-          class="project-card"
-          :class="`card-${index + 1}`"
+          class="portfolio-projects__card"
+          :class="`portfolio-projects__card--${index + 1}`"
         >
-          <div class="card-header">
-            <div class="project-icon">
+          <div class="portfolio-projects__card-header">
+            <div class="portfolio-projects__project-icon">
               <ZapIcon />
             </div>
-            <div class="project-status">
-              <span class="status-badge">Active</span>
+            <div class="portfolio-projects__project-status">
+              <span class="portfolio-projects__status-badge">Active</span>
             </div>
           </div>
 
-          <div class="card-content">
-            <h3 class="project-title">{{ p.title }}</h3>
-            <p class="project-description">{{ p.desc }}</p>
+          <div class="portfolio-projects__card-content">
+            <h3 class="portfolio-projects__project-title">{{ p.title }}</h3>
+            <p class="portfolio-projects__project-description">{{ p.desc }}</p>
           </div>
 
-          <div class="card-footer">
-            <div class="project-actions">
+          <div class="portfolio-projects__card-footer">
+            <div class="portfolio-projects__project-actions">
               <a
                 v-if="p.demoUrl"
                 :href="p.demoUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="action-btn demo"
+                class="portfolio-projects__action-btn portfolio-projects__action-btn--demo"
                 :aria-label="`View ${p.title} demo (opens in a new tab)`"
               >
                 <ExternalLinkIcon />
@@ -55,7 +55,7 @@ const { projects, techMapping } = personal
                 :href="p.githubUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="action-btn github"
+                class="portfolio-projects__action-btn portfolio-projects__action-btn--github"
                 :aria-label="`View ${p.title} source code (opens in a new tab)`"
               >
                 <GitHubIcon />
@@ -63,11 +63,11 @@ const { projects, techMapping } = personal
               </a>
             </div>
 
-            <div class="project-tech">
+            <div class="portfolio-projects__tech-list">
               <span
                 v-for="tech in p.tech"
                 :key="tech"
-                :class="`tech-tag ${techMapping[tech] || 'default'}`"
+                :class="`portfolio-projects__tech-tag portfolio-projects__tech-tag--${techMapping[tech] || 'default'}`"
               >
                 {{ tech }}
               </span>
@@ -77,11 +77,13 @@ const { projects, techMapping } = personal
       </div>
 
       <!-- CTA Section -->
-      <div class="projects-cta">
-        <div class="cta-content">
-          <h3>Interested in My Work?</h3>
-          <p>Let's collaborate on your next project and bring your ideas to life!</p>
-          <a href="#contact" class="cta-btn">
+      <div class="portfolio-projects__cta">
+        <div class="portfolio-projects__cta-content">
+          <h3 class="portfolio-projects__cta-title">Interested in My Work?</h3>
+          <p class="portfolio-projects__cta-description">
+            Let's collaborate on your next project and bring your ideas to life!
+          </p>
+          <a href="#contact" class="portfolio-projects__cta-btn">
             <MessageCircle />
             Get In Touch
           </a>

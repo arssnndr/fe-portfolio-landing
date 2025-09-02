@@ -1,30 +1,23 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
+import '@/styles/pages/NotFound.css'
+
 const router = useRouter()
+
 function goHome() {
   router.push('/')
 }
 </script>
 
 <template>
-  <section class="section not-found">
-    <h1>404 - Page Not Found</h1>
-    <p>The page you’re looking for doesn’t exist.</p>
-    <button class="btn" @click="goHome">Go to Home</button>
+  <section class="not-found">
+    <div class="not-found__container">
+      <h1 class="not-found__title">404</h1>
+      <p class="not-found__description">
+        Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or you
+        entered the wrong URL.
+      </p>
+      <button class="not-found__btn" @click="goHome">Go to Home</button>
+    </div>
   </section>
 </template>
-
-<style scoped>
-.not-found {
-  text-align: center;
-  padding: 4rem 1rem;
-}
-.btn {
-  background: #06b6d4;
-  color: #042024;
-  padding: 0.6rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-}
-</style>

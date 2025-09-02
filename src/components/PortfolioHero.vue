@@ -7,50 +7,50 @@ const { name, role, tagline } = personal
 </script>
 
 <template>
-  <header class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">{{ name }}</h1>
-          <p class="hero-role">{{ role }}</p>
-          <p class="hero-tagline">{{ tagline }}</p>
-          <div class="hero-cta">
-            <a href="#projects" class="cta-btn primary">
+  <header class="portfolio-hero">
+    <div class="portfolio-hero__container">
+      <div class="portfolio-hero__content">
+        <div class="portfolio-hero__text">
+          <h1 class="portfolio-hero__title">{{ name }}</h1>
+          <p class="portfolio-hero__role">{{ role }}</p>
+          <p class="portfolio-hero__tagline">{{ tagline }}</p>
+          <div class="portfolio-hero__cta">
+            <a href="#projects" class="portfolio-hero__cta-btn portfolio-hero__cta-btn--primary">
               <ArrowUpRight />
               View Projects
             </a>
-            <a href="#contact" class="cta-btn secondary">
+            <a href="#contact" class="portfolio-hero__cta-btn portfolio-hero__cta-btn--secondary">
               <MessageCircle />
               Let's Talk
             </a>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="floating-card">
-            <div class="card-content">
-              <div class="profile-avatar">
-                <div class="avatar-inner">
+        <div class="portfolio-hero__visual">
+          <div class="portfolio-hero__floating-card">
+            <div class="portfolio-hero__card-content">
+              <div class="portfolio-hero__profile-avatar">
+                <div class="portfolio-hero__avatar-inner">
                   <UserIcon />
                 </div>
               </div>
-              <div class="tech-badges">
-                <span class="tech-badge">Vue.js</span>
-                <span class="tech-badge">TypeScript</span>
-                <span class="tech-badge">Angular</span>
+              <div class="portfolio-hero__tech-badges">
+                <span class="portfolio-hero__tech-badge">Vue.js</span>
+                <span class="portfolio-hero__tech-badge">TypeScript</span>
+                <span class="portfolio-hero__tech-badge">Angular</span>
               </div>
             </div>
           </div>
 
           <!-- Floating Elements -->
-          <div class="floating-element element-1">
+          <div class="portfolio-hero__floating-element portfolio-hero__floating-element--1">
             <ZapIcon />
           </div>
 
-          <div class="floating-element element-2">
+          <div class="portfolio-hero__floating-element portfolio-hero__floating-element--2">
             <CodeIcon />
           </div>
 
-          <div class="floating-element element-3">
+          <div class="portfolio-hero__floating-element portfolio-hero__floating-element--3">
             <ClockIcon />
           </div>
         </div>

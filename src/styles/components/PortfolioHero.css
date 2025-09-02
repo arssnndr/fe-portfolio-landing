@@ -1,5 +1,5 @@
-/* PortfolioHero Component Styles */
-.hero-section {
+/* PortfolioHero Component Styles - BEM Methodology */
+.portfolio-hero {
   min-height: 100vh;
   background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
   color: white;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.hero-section::before {
+.portfolio-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -23,7 +23,7 @@
   pointer-events: none;
 }
 
-.hero-section .container {
+.portfolio-hero__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-.hero-section .hero-content {
+.portfolio-hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -40,11 +40,11 @@
   min-height: 80vh;
 }
 
-.hero-section .hero-text {
+.portfolio-hero__text {
   animation: fadeInLeft 1s ease-out;
 }
 
-.hero-section .hero-title {
+.portfolio-hero__title {
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -56,7 +56,7 @@
   position: relative;
 }
 
-.hero-section .hero-title::after {
+.portfolio-hero__title::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -68,7 +68,7 @@
   animation: expandWidth 1s ease-out 0.5s both;
 }
 
-.hero-section .hero-role {
+.portfolio-hero__role {
   font-size: 1.5rem;
   font-weight: 600;
   color: #3b82f6;
@@ -78,7 +78,7 @@
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-.hero-section .hero-tagline {
+.portfolio-hero__tagline {
   font-size: 1.25rem;
   opacity: 0.9;
   line-height: 1.6;
@@ -87,13 +87,13 @@
   animation: fadeInUp 1s ease-out 0.4s both;
 }
 
-.hero-section .hero-cta {
+.portfolio-hero__cta {
   display: flex;
   gap: 1.5rem;
   animation: fadeInUp 1s ease-out 0.6s both;
 }
 
-.hero-section .cta-btn {
+.portfolio-hero__cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
@@ -107,19 +107,19 @@
   z-index: 1;
 }
 
-.hero-section .cta-btn.primary {
+.portfolio-hero__cta-btn--primary {
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
   color: white;
   border: 2px solid transparent;
 }
 
-.hero-section .cta-btn.secondary {
+.portfolio-hero__cta-btn--secondary {
   background: transparent;
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.hero-section .cta-btn::before {
+.portfolio-hero__cta-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -131,27 +131,27 @@
   z-index: -1;
 }
 
-.hero-section .cta-btn:hover::before {
+.portfolio-hero__cta-btn:hover::before {
   left: 100%;
 }
 
-.hero-section .cta-btn.primary:hover {
+.portfolio-hero__cta-btn--primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
 }
 
-.hero-section .cta-btn.secondary:hover {
+.portfolio-hero__cta-btn--secondary:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
 }
 
-.hero-section .hero-visual {
+.portfolio-hero__visual {
   position: relative;
   animation: fadeInRight 1s ease-out 0.8s both;
 }
 
-.hero-section .floating-card {
+.portfolio-hero__floating-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -163,7 +163,13 @@
   z-index: 2;
 }
 
-.hero-section .profile-avatar {
+.portfolio-hero__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-hero__profile-avatar {
   width: 120px;
   height: 120px;
   margin: 0 auto 2rem;
@@ -175,7 +181,7 @@
   position: relative;
 }
 
-.hero-section .avatar-inner {
+.portfolio-hero__avatar-inner {
   width: 110px;
   height: 110px;
   background: rgba(255, 255, 255, 0.1);
@@ -186,14 +192,14 @@
   color: white;
 }
 
-.hero-section .tech-badges {
+.portfolio-hero__tech-badges {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.hero-section .tech-badge {
+.portfolio-hero__tech-badge {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -204,7 +210,7 @@
   color: white;
 }
 
-.hero-section .floating-element {
+.portfolio-hero__floating-element {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -218,25 +224,25 @@
   color: white;
 }
 
-.hero-section .element-1 {
+.portfolio-hero__floating-element--1 {
   top: 10%;
   right: 10%;
   animation: float 4s ease-in-out infinite;
 }
 
-.hero-section .element-2 {
+.portfolio-hero__floating-element--2 {
   top: 60%;
   right: -10%;
   animation: float 5s ease-in-out infinite 1s;
 }
 
-.hero-section .element-3 {
+.portfolio-hero__floating-element--3 {
   bottom: 20%;
   left: -5%;
   animation: float 4.5s ease-in-out infinite 2s;
 }
 
-/* Animations */
+/* Animations for PortfolioHero component */
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -294,72 +300,72 @@
   }
 }
 
-/* Responsive Design */
+/* Responsive Design for PortfolioHero component */
 @media (max-width: 768px) {
-  .hero-section .hero-content {
+  .portfolio-hero__content {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
     min-height: 90vh;
   }
 
-  .hero-section .hero-title {
+  .portfolio-hero__title {
     font-size: 3rem;
   }
 
-  .hero-section .hero-role {
+  .portfolio-hero__role {
     font-size: 1.25rem;
   }
 
-  .hero-section .hero-tagline {
+  .portfolio-hero__tagline {
     font-size: 1.125rem;
   }
 
-  .hero-section .hero-cta {
+  .portfolio-hero__cta {
     flex-direction: column;
     align-items: center;
   }
 
-  .hero-section .cta-btn {
+  .portfolio-hero__cta-btn {
     width: 100%;
     max-width: 300px;
     justify-content: center;
   }
 
-  .hero-section .floating-card {
+  .portfolio-hero__floating-card {
     padding: 2rem;
   }
 
-  .hero-section .profile-avatar {
+  .portfolio-hero__profile-avatar {
     width: 100px;
     height: 100px;
   }
 
-  .hero-section .avatar-inner {
+  .portfolio-hero__avatar-inner {
     width: 90px;
     height: 90px;
   }
 
-  .hero-section .floating-element {
+  .portfolio-hero__floating-element {
     width: 50px;
     height: 50px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-section .container {
+  .portfolio-hero__container {
     padding: 0 1rem;
   }
 
-  .hero-section .hero-title {
+  .portfolio-hero__title {
     font-size: 2.5rem;
   }
 
-  .hero-section .hero-role {
+  .portfolio-hero__role {
     font-size: 1.125rem;
   }
 
-  .hero-section .floating-card {
+  .portfolio-hero__floating-card {
     padding: 1.5rem;
   }
 }

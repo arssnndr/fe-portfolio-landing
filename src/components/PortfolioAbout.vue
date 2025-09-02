@@ -7,86 +7,86 @@ const { bio } = personal
 </script>
 
 <template>
-  <section id="about" class="about-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-        <div class="title-decoration"></div>
+  <section id="about" class="portfolio-about">
+    <div class="portfolio-about__container">
+      <div class="portfolio-about__header">
+        <h2 class="portfolio-about__title">About Me</h2>
+        <div class="portfolio-about__title-decoration"></div>
       </div>
 
-      <div class="about-content">
-        <div class="about-text">
-          <div class="bio-card">
-            <div class="card-header">
-              <div class="profile-icon">
+      <div class="portfolio-about__content">
+        <div class="portfolio-about__bio-section">
+          <div class="portfolio-about__bio-card">
+            <div class="portfolio-about__bio-header">
+              <div class="portfolio-about__profile-icon">
                 <UserIcon />
               </div>
-              <h3>My Story</h3>
+              <h3 class="portfolio-about__bio-title">My Story</h3>
             </div>
-            <p class="bio-text">{{ bio }}</p>
+            <p class="portfolio-about__bio-text">{{ bio }}</p>
           </div>
         </div>
 
-        <div class="skills-showcase">
-          <div class="skills-card">
-            <h3>Technical Skills</h3>
-            <div class="skills-grid">
-              <div class="skill-item frontend">
-                <div class="skill-icon">
+        <div class="portfolio-about__skills-section">
+          <div class="portfolio-about__skills-card">
+            <h3 class="portfolio-about__skills-title">Technical Skills</h3>
+            <div class="portfolio-about__skills-grid">
+              <div class="portfolio-about__skill-item portfolio-about__skill-item--frontend">
+                <div class="portfolio-about__skill-icon">
                   <MonitorIcon />
                 </div>
-                <div class="skill-info">
-                  <h4>Frontend</h4>
-                  <p>Vue.js, Angular, TypeScript</p>
+                <div class="portfolio-about__skill-info">
+                  <h4 class="portfolio-about__skill-name">Frontend</h4>
+                  <p class="portfolio-about__skill-description">Vue.js, Angular, TypeScript</p>
                 </div>
               </div>
 
-              <div class="skill-item tools">
-                <div class="skill-icon">
+              <div class="portfolio-about__skill-item portfolio-about__skill-item--tools">
+                <div class="portfolio-about__skill-icon">
                   <ToolsIcon />
                 </div>
-                <div class="skill-info">
-                  <h4>Tools</h4>
-                  <p>Vite, Node.js, Git</p>
+                <div class="portfolio-about__skill-info">
+                  <h4 class="portfolio-about__skill-name">Tools</h4>
+                  <p class="portfolio-about__skill-description">Vite, Node.js, Git</p>
                 </div>
               </div>
 
-              <div class="skill-item design">
-                <div class="skill-icon">
+              <div class="portfolio-about__skill-item portfolio-about__skill-item--design">
+                <div class="portfolio-about__skill-icon">
                   <SunIcon />
                 </div>
-                <div class="skill-info">
-                  <h4>Design</h4>
-                  <p>Responsive UI, UX</p>
+                <div class="portfolio-about__skill-info">
+                  <h4 class="portfolio-about__skill-name">Design</h4>
+                  <p class="portfolio-about__skill-description">Responsive UI, UX</p>
                 </div>
               </div>
 
-              <div class="skill-item backend">
-                <div class="skill-icon">
+              <div class="portfolio-about__skill-item portfolio-about__skill-item--backend">
+                <div class="portfolio-about__skill-icon">
                   <DatabaseIcon />
                 </div>
-                <div class="skill-info">
-                  <h4>Backend</h4>
-                  <p>Express.js, REST API</p>
+                <div class="portfolio-about__skill-info">
+                  <h4 class="portfolio-about__skill-name">Backend</h4>
+                  <p class="portfolio-about__skill-description">Express.js, REST API</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="stats-card">
-            <h3>Experience</h3>
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-number">3+</div>
-                <div class="stat-label">Years Experience</div>
+          <div class="portfolio-about__stats-card">
+            <h3 class="portfolio-about__stats-title">Experience</h3>
+            <div class="portfolio-about__stats-grid">
+              <div class="portfolio-about__stat-item">
+                <div class="portfolio-about__stat-number">3+</div>
+                <div class="portfolio-about__stat-label">Years Experience</div>
               </div>
-              <div class="stat-item">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">Projects Completed</div>
+              <div class="portfolio-about__stat-item">
+                <div class="portfolio-about__stat-number">10+</div>
+                <div class="portfolio-about__stat-label">Projects Completed</div>
               </div>
-              <div class="stat-item">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">Technologies</div>
+              <div class="portfolio-about__stat-item">
+                <div class="portfolio-about__stat-number">5+</div>
+                <div class="portfolio-about__stat-label">Technologies</div>
               </div>
             </div>
           </div>
