@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { personal } from '@/config/personal'
 import '../styles/components/PortfolioHero.css'
 import { ArrowUpRight, MessageCircle, UserIcon, ZapIcon, CodeIcon, ClockIcon } from '@/assets/icons'
 
-const { name, role, tagline } = personal
+const { name, role, tagline, projects } = personal
+
+// Get unique technologies from all projects
+const uniqueTechnologies = computed(() => {
+  const allTech = projects.flatMap((project) => project.tech)
+  return [...new Set(allTech)]
+})
 </script>
 
 <template>
@@ -38,14 +45,13 @@ const { name, role, tagline } = personal
                 </div>
               </div>
               <div class="portfolio-hero__tech-badges">
-                <span class="portfolio-hero__tech-badge">Vue.js</span>
-                <span class="portfolio-hero__tech-badge">Angular</span>
-                <span class="portfolio-hero__tech-badge">TypeScript</span>
-                <span class="portfolio-hero__tech-badge">Node.js</span>
-                <span class="portfolio-hero__tech-badge">Express.js</span>
-                <span class="portfolio-hero__tech-badge">Vite</span>
-                <span class="portfolio-hero__tech-badge">Tailwind CSS</span>
-                <span class="portfolio-hero__tech-badge">Supabase</span>
+                <span
+                  v-for="tech in uniqueTechnologies"
+                  :key="tech"
+                  class="portfolio-hero__tech-badge"
+                >
+                  {{ tech }}
+                </span>
               </div>
             </div>
           </div>

@@ -3,7 +3,15 @@ import { personal } from '@/config/personal'
 import { UserIcon, MonitorIcon, ToolsIcon, SunIcon, DatabaseIcon } from '@/assets/icons'
 import '../styles/components/PortfolioAbout.css'
 
-const { bio } = personal
+const { bio, skills, experience } = personal
+
+// Icon mapping for skill categories
+const skillIcons = {
+  frontend: MonitorIcon,
+  tools: ToolsIcon,
+  design: SunIcon,
+  backend: DatabaseIcon,
+}
 </script>
 
 <template>
@@ -31,43 +39,17 @@ const { bio } = personal
           <div class="portfolio-about__skills-card">
             <h3 class="portfolio-about__skills-title">Technical Skills</h3>
             <div class="portfolio-about__skills-grid">
-              <div class="portfolio-about__skill-item portfolio-about__skill-item--frontend">
+              <div
+                v-for="skill in skills"
+                :key="skill.name"
+                :class="`portfolio-about__skill-item portfolio-about__skill-item--${skill.category}`"
+              >
                 <div class="portfolio-about__skill-icon">
-                  <MonitorIcon />
+                  <component :is="skillIcons[skill.category]" />
                 </div>
                 <div class="portfolio-about__skill-info">
-                  <h4 class="portfolio-about__skill-name">Frontend</h4>
-                  <p class="portfolio-about__skill-description">Vue.js, Angular, TypeScript</p>
-                </div>
-              </div>
-
-              <div class="portfolio-about__skill-item portfolio-about__skill-item--tools">
-                <div class="portfolio-about__skill-icon">
-                  <ToolsIcon />
-                </div>
-                <div class="portfolio-about__skill-info">
-                  <h4 class="portfolio-about__skill-name">Tools</h4>
-                  <p class="portfolio-about__skill-description">Vite, Node.js, Git</p>
-                </div>
-              </div>
-
-              <div class="portfolio-about__skill-item portfolio-about__skill-item--design">
-                <div class="portfolio-about__skill-icon">
-                  <SunIcon />
-                </div>
-                <div class="portfolio-about__skill-info">
-                  <h4 class="portfolio-about__skill-name">Design</h4>
-                  <p class="portfolio-about__skill-description">Responsive UI, UX</p>
-                </div>
-              </div>
-
-              <div class="portfolio-about__skill-item portfolio-about__skill-item--backend">
-                <div class="portfolio-about__skill-icon">
-                  <DatabaseIcon />
-                </div>
-                <div class="portfolio-about__skill-info">
-                  <h4 class="portfolio-about__skill-name">Backend</h4>
-                  <p class="portfolio-about__skill-description">Express.js, REST API</p>
+                  <h4 class="portfolio-about__skill-name">{{ skill.name }}</h4>
+                  <p class="portfolio-about__skill-description">{{ skill.description }}</p>
                 </div>
               </div>
             </div>
@@ -77,15 +59,15 @@ const { bio } = personal
             <h3 class="portfolio-about__stats-title">Experience</h3>
             <div class="portfolio-about__stats-grid">
               <div class="portfolio-about__stat-item">
-                <div class="portfolio-about__stat-number">3+</div>
+                <div class="portfolio-about__stat-number">{{ experience.years }}</div>
                 <div class="portfolio-about__stat-label">Years Experience</div>
               </div>
               <div class="portfolio-about__stat-item">
-                <div class="portfolio-about__stat-number">10+</div>
+                <div class="portfolio-about__stat-number">{{ experience.projects }}</div>
                 <div class="portfolio-about__stat-label">Projects Completed</div>
               </div>
               <div class="portfolio-about__stat-item">
-                <div class="portfolio-about__stat-number">5+</div>
+                <div class="portfolio-about__stat-number">{{ experience.technologies }}</div>
                 <div class="portfolio-about__stat-label">Technologies</div>
               </div>
             </div>

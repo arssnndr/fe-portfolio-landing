@@ -11,6 +11,18 @@ interface TechMapping {
   [key: string]: string
 }
 
+interface Skill {
+  name: string
+  description: string
+  category: 'frontend' | 'tools' | 'design' | 'backend'
+}
+
+interface Experience {
+  years: string
+  projects: string
+  technologies: string
+}
+
 export interface PersonalConfig {
   name: string
   role: string
@@ -18,6 +30,8 @@ export interface PersonalConfig {
   bio: string
   email: string
   phone: string
+  skills: Skill[]
+  experience: Experience
   projects: Project[]
   socials: {
     github?: string
@@ -35,6 +49,33 @@ export const personal: PersonalConfig = {
   bio: `Passionate frontend developer specializing in modern web technologies including Angular, Vue.js, and TypeScript. I focus on creating responsive, accessible, and high-performance web applications with excellent user experiences. Currently working on various projects ranging from employee management systems to portfolio websites.`,
   email: 'arissunandar399@gmail.com',
   phone: '08996852370',
+  skills: [
+    {
+      name: 'Frontend',
+      description: 'Vue.js, Angular, TypeScript',
+      category: 'frontend',
+    },
+    {
+      name: 'Tools',
+      description: 'Vite, Node.js, Git',
+      category: 'tools',
+    },
+    {
+      name: 'Design',
+      description: 'Responsive UI, UX',
+      category: 'design',
+    },
+    {
+      name: 'Backend',
+      description: 'Express.js, REST API',
+      category: 'backend',
+    },
+  ],
+  experience: {
+    years: '3+',
+    projects: '10+',
+    technologies: '5+',
+  },
   projects: [
     {
       id: 1,
