@@ -4,6 +4,11 @@ interface Project {
   desc: string
   demoUrl?: string
   githubUrl?: string
+  tech: string[]
+}
+
+interface TechMapping {
+  [key: string]: string
 }
 
 export interface PersonalConfig {
@@ -20,6 +25,7 @@ export interface PersonalConfig {
     twitter?: string
     whatsapp?: string
   }
+  techMapping: TechMapping
 }
 
 export const personal: PersonalConfig = {
@@ -36,6 +42,7 @@ export const personal: PersonalConfig = {
       desc: 'Modern portfolio website built with Vue 3, TypeScript, and Vite. Features microfrontend architecture, responsive design, and optimized performance.',
       demoUrl: 'https://www.port-aris.my.id',
       githubUrl: 'https://github.com/arssnndr/fe-portfolio-landing',
+      tech: ['Vue.js', 'TypeScript', 'Vite'],
     },
     {
       id: 2,
@@ -43,17 +50,29 @@ export const personal: PersonalConfig = {
       desc: 'Comprehensive employee management application with authentication, CRUD operations, search and filtering capabilities, and responsive UI. Features form validation and secure workflow for HR management.',
       demoUrl: 'https://www.port-aris.my.id/employee-management/login',
       githubUrl: 'https://github.com/arssnndr/fe-employee-management',
+      tech: ['Angular', 'TypeScript', 'Bootstrap'],
     },
     {
       id: 3,
       title: 'Employee Management API',
       desc: 'Express.js REST API backend for employee management. Features JWT authentication, Supabase integration, comprehensive testing with Node.js test runner, rate limiting, and security middleware. Includes user registration/login and full CRUD operations for employee data.',
       githubUrl: 'https://github.com/arssnndr/be-employee-management',
+      tech: ['Express.js', 'Node.js', 'TypeScript', 'Supabase'],
     },
   ],
   socials: {
     github: 'https://github.com/arssnndr',
     linkedin: 'https://www.linkedin.com/in/arssnndr/',
     whatsapp: 'https://wa.me/6208996852370',
+  },
+  techMapping: {
+    'Vue.js': 'vue',
+    Angular: 'angular',
+    'Express.js': 'express',
+    'Node.js': 'nodejs',
+    TypeScript: 'typescript',
+    Vite: 'vite',
+    Bootstrap: 'bootstrap',
+    Supabase: 'supabase',
   },
 }

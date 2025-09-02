@@ -3,7 +3,7 @@ import { personal } from '@/config/personal'
 import { ZapIcon, ExternalLinkIcon, GitHubIcon, MessageCircle } from '@/assets/icons'
 import '@/styles/components/PortfolioProjects.css'
 
-const { projects } = personal
+const { projects, techMapping } = personal
 </script>
 <template>
   <section id="projects" class="projects-section">
@@ -64,11 +64,13 @@ const { projects } = personal
             </div>
 
             <div class="project-tech">
-              <span v-if="p.title.includes('Vue')" class="tech-tag vue">Vue.js</span>
-              <span v-if="p.title.includes('Employee')" class="tech-tag angular">Angular</span>
-              <span v-if="p.title.includes('API')" class="tech-tag express">Express.js</span>
-              <span v-if="p.title.includes('Portfolio')" class="tech-tag vite">Vite</span>
-              <span class="tech-tag typescript">TypeScript</span>
+              <span
+                v-for="tech in p.tech"
+                :key="tech"
+                :class="`tech-tag ${techMapping[tech] || 'default'}`"
+              >
+                {{ tech }}
+              </span>
             </div>
           </div>
         </article>
