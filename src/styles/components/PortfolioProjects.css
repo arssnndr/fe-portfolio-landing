@@ -2,8 +2,8 @@
 .portfolio-projects {
   min-height: 100vh;
   padding: 5rem 0;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
-  color: white;
+  background: var(--gradient-projects);
+  color: var(--text-primary);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -42,10 +42,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .portfolio-projects__subtitle {
@@ -73,9 +70,9 @@
 }
 
 .portfolio-projects__card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 25px;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -159,13 +156,13 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: white;
+  color: var(--text-primary);
 }
 
 .portfolio-projects__project-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   margin: 0;
 }
 
@@ -202,8 +199,8 @@
 
 .portfolio-projects__action-btn--github {
   background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-primary);
+  border: 2px solid var(--glass-border);
 }
 
 .portfolio-projects__action-btn::before {
@@ -228,7 +225,7 @@
 }
 
 .portfolio-projects__action-btn--github:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
   transform: translateY(-2px);
 }
 
@@ -313,9 +310,9 @@
 }
 
 .portfolio-projects__cta-content {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 25px;
   padding: 3rem 2rem;
   max-width: 600px;
@@ -326,12 +323,12 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: white;
+  color: var(--text-primary);
 }
 
 .portfolio-projects__cta-description {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   margin-bottom: 2rem;
   line-height: 1.6;
 }

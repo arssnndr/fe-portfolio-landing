@@ -1,6 +1,6 @@
 /* LandingPage Component Styles - BEM Methodology */
 .landing-page {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  background: var(--background-primary);
   min-height: 100vh;
   position: relative;
 }

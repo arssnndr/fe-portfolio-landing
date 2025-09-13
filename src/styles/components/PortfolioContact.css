@@ -2,8 +2,8 @@
 .portfolio-contact {
   min-height: 100vh;
   padding: 4rem 0;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
-  color: white;
+  background: var(--gradient-contact);
+  color: var(--text-primary);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -42,10 +42,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .portfolio-contact__subtitle {
@@ -69,9 +66,9 @@
 }
 
 .portfolio-contact__card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 20px;
   padding: 2rem;
   display: flex;
@@ -102,7 +99,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
@@ -130,11 +129,11 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: white;
+  color: var(--text-primary);
 }
 
 .portfolio-contact__link {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -168,11 +167,11 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 15px;
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -180,7 +179,7 @@
 
 .portfolio-contact__social-link:hover {
   transform: translateX(5px);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
 }
 
 .portfolio-contact__social-link--github:hover {
@@ -200,9 +199,9 @@
 }
 
 .portfolio-contact__cta-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 25px;
   padding: 3rem;
   text-align: center;
@@ -268,8 +267,8 @@
 
 .portfolio-contact__cta-btn--secondary {
   background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-primary);
+  border: 2px solid var(--glass-border);
 }
 
 .portfolio-contact__cta-btn::before {
@@ -294,9 +293,9 @@
 }
 
 .portfolio-contact__cta-btn--secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
 /* Animations for PortfolioContact component */

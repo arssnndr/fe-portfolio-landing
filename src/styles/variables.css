@@ -7,9 +7,10 @@
   --secondary-teal: #10b981;
   --accent-primary: #3b82f6;
 
-  /* Gradients - Unified dark theme */
+  /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
   --gradient-unified: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  --gradient-unified-light: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
   --gradient-hero: var(--gradient-unified);
   --gradient-about: var(--gradient-unified);
   --gradient-projects: var(--gradient-unified);
@@ -72,11 +73,33 @@
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.8);
   --text-muted: rgba(255, 255, 255, 0.6);
+
+  --gradient-hero: var(--gradient-unified);
+  --gradient-about: var(--gradient-unified);
+  --gradient-projects: var(--gradient-unified);
+  --gradient-contact: var(--gradient-unified);
+
+  --background-primary: var(--gradient-unified);
+  --background-secondary: #0f172a; /* slate-900 */
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.18);
 }
 
 /* Light theme variables */
 [data-theme='light'] {
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #0f172a; /* slate-900 */
+  --text-secondary: #334155; /* slate-700 */
+  --text-muted: #64748b; /* slate-500 */
+
+  --gradient-hero: var(--gradient-unified-light);
+  --gradient-about: var(--gradient-unified-light);
+  --gradient-projects: var(--gradient-unified-light);
+  --gradient-contact: var(--gradient-unified-light);
+
+  --background-primary: var(--gradient-unified-light);
+  --background-secondary: #ffffff;
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(15, 23, 42, 0.08);
 }

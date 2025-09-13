@@ -2,8 +2,8 @@
 .portfolio-about {
   min-height: 100vh;
   padding: 5rem 0;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
-  color: white;
+  background: var(--gradient-about);
+  color: var(--text-primary);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -42,10 +42,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
   position: relative;
 }
 
@@ -70,12 +67,12 @@
 }
 
 .portfolio-about__bio-card {
-  background: rgba(30, 41, 59, 0.8);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 25px;
   padding: 2.5rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .portfolio-about__bio-header {
@@ -100,14 +97,14 @@
 .portfolio-about__bio-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--text-primary);
   margin: 0;
 }
 
 .portfolio-about__bio-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   margin: 0;
 }
 
@@ -120,12 +117,12 @@
 
 .portfolio-about__skills-card,
 .portfolio-about__stats-card {
-  background: rgba(30, 41, 59, 0.8);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 25px;
   padding: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-md);
   transition: transform 0.3s ease;
 }
 
@@ -138,7 +135,7 @@
 .portfolio-about__stats-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -154,13 +151,13 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: rgba(51, 65, 85, 0.6);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
 
 .portfolio-about__skill-item:hover {
-  background: rgba(71, 85, 105, 0.8);
   transform: translateY(-2px);
 }
 
@@ -201,13 +198,13 @@
 .portfolio-about__skill-name {
   font-size: 1rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .portfolio-about__skill-description {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   margin: 0;
 }
 
@@ -220,7 +217,8 @@
 .portfolio-about__stat-item {
   text-align: center;
   padding: 1.5rem 1rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -231,7 +229,7 @@
 }
 
 .portfolio-about__stat-item:hover .portfolio-about__stat-label {
-  color: #1e293b;
+  color: var(--text-primary);
 }
 
 .portfolio-about__stat-number {
@@ -246,7 +244,7 @@
 
 .portfolio-about__stat-label {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   font-weight: 500;
   transition: color 0.3s ease;
 }
