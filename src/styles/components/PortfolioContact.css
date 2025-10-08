@@ -180,6 +180,11 @@
 .portfolio-contact__social-link:hover {
   transform: translateX(5px);
   background: var(--glass-bg);
+  color: white;
+}
+
+.portfolio-contact__social-link:hover svg {
+  color: white;
 }
 
 .portfolio-contact__social-link--github:hover {
